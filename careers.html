@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - EspritPathFinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-white font-['Poppins',sans-serif]">
+    <!-- Navbar -->
+    <nav class="bg-[#fafbfd] border-b-[0.5px] border-transparent shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] h-16 sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto h-full flex items-center justify-between px-4 md:px-8">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="EspritPathFinder Logo" class="h-10 md:h-14 w-auto">
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="flex items-center gap-3 md:gap-4 lg:gap-6">
+                <a href="index.html" class="text-sm md:text-lg xl:text-2xl font-medium text-black hover:text-[#1086b9] transition-colors">Home</a>
+                <a href="options.html" class="text-sm md:text-lg xl:text-2xl font-medium text-black hover:text-[#1086b9] transition-colors">Options</a>
+                <a href="careers.html" class="text-sm md:text-lg xl:text-2xl font-medium text-[#1086b9]">Careers</a>
+                <a href="monitors.html" class="text-sm md:text-lg xl:text-2xl font-medium text-black hover:text-[#1086b9] transition-colors">Monitors</a>
+            </div>
+            
+            <!-- Login Button -->
+            <div>
+                <a href="signin.html" class="bg-[#6ecefa] text-white text-sm md:text-lg xl:text-2xl font-medium px-4 md:px-8 py-2 md:py-2.5 rounded-[5px] inline-block hover:bg-[#5ab8e8] transition-colors">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8 md:py-12">
+        <!-- Page Title -->
+        <h1 class="text-[#007aae] text-3xl md:text-4xl font-bold text-center mb-8">Careers</h1>
+
+        <!-- Tabs Navigation -->
+        <div class="max-w-[1225px] mx-auto mb-12">
+            <div class="flex border border-[rgba(16,134,185,0.4)] rounded-[5px] overflow-x-auto">
+                <button class="flex-1 min-w-fit px-3 py-3 md:px-4 md:py-4 bg-[rgba(110,206,250,0.35)] border border-[rgba(16,134,185,0.4)] text-sm md:text-lg lg:text-xl font-['Poppins',sans-serif] text-black cursor-pointer transition-all duration-300 hover:bg-[rgba(16,134,185,0.1)]" onclick="switchTab('entreprises', this)">Entreprises</button>
+                <button class="flex-1 min-w-fit px-3 py-3 md:px-4 md:py-4 bg-[rgba(16,134,185,0.02)] border border-[rgba(16,134,185,0.4)] text-sm md:text-lg lg:text-xl font-['Poppins',sans-serif] text-black cursor-pointer transition-all duration-300 hover:bg-[rgba(16,134,185,0.1)]" onclick="switchTab('rapports', this)">Rapports Anonymes</button>
+                <button class="flex-1 min-w-fit px-3 py-3 md:px-4 md:py-4 bg-[rgba(16,134,185,0.02)] border border-[rgba(16,134,185,0.4)] text-sm md:text-lg lg:text-xl font-['Poppins',sans-serif] text-black cursor-pointer transition-all duration-300 hover:bg-[rgba(16,134,185,0.1)]" onclick="switchTab('alumnis', this)">Alumnis</button>
+                <button class="flex-1 min-w-fit px-3 py-3 md:px-4 md:py-4 bg-[rgba(16,134,185,0.02)] border border-[rgba(16,134,185,0.4)] text-sm md:text-lg lg:text-xl font-['Poppins',sans-serif] text-black cursor-pointer transition-all duration-300 hover:bg-[rgba(16,134,185,0.1)]" onclick="switchTab('metiers', this)">Metiers</button>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="max-w-[1225px] mx-auto">
+            <!-- Entreprises Tab (Active) -->
+            <div id="entreprises-content" class="tab-content">
+                <h2 class="text-[#1086b9] text-2xl md:text-3xl font-semibold text-center mb-12">Top Embauches Partenaires</h2>
+
+                <!-- Companies Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-16 gap-y-8 md:gap-y-12">
+                    <!-- Nexora -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">Nexora</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">12 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+
+                    <!-- Cloudshift -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">Cloudshift</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">8 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+
+                    <!-- Syntaftix -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">Syntaftix</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">10 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+
+                    <!-- Code Axis -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">Code Axis</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">6 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+
+                    <!-- Infratek -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">Infratek</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2l2.5 5.5L18 8.5l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1L10 2z" fill="#FFD700" stroke="#FFD700" stroke-width="1"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">15 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+
+                    <!-- DataPulse -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-4">
+                        <div class="flex items-start justify-between mb-3">
+                            <h3 class="text-neutral-950 text-base font-normal">DataPulse</h3>
+                            <div class="flex items-center gap-1">
+                                <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2l2.5 5.5L18 8.5l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1L10 2z" fill="#FFD700" stroke="#FFD700" stroke-width="1"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#FFD700"/></svg>
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77V2z" fill="#FFD700"/><path d="M12 2v15.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="none" stroke="#FFD700" stroke-width="2"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#4a5565] text-sm mb-2">14 partenariats actifs</p>
+                        <p class="text-neutral-950 text-sm">Opportunités disponibles</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Tabs (Hidden) -->
+            <div id="rapports-content" class="tab-content hidden">
+                <h2 class="text-[#1086b9] text-2xl md:text-3xl font-semibold mb-12">Rapports Anonymes</h2>
+
+                <!-- Reports List -->
+                <div class="space-y-6 md:space-y-8">
+                    <!-- Report 1 - Web Development -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - Web Development</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2024 • </span>
+                                <span class="text-[#1086b9]">245</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Report 2 - Data Science -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - Data Science</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2024 • </span>
+                                <span class="text-[#1086b9]">189</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Report 3 - Mobile Development -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - Mobile Development</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2023 • </span>
+                                <span class="text-[#1086b9]">312</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Report 4 - Cybersecurity -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - Cybersecurity</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2023 • </span>
+                                <span class="text-[#1086b9]">279</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Report 5 - AI & Machine Learning -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - AI & Machine Learning</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2024 • </span>
+                                <span class="text-[#1086b9]">421</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Report 6 - Cloud Architecture -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">RAPPORT PFE - Cloud Architechture</h3>
+                            <p class="text-[#4a5565] text-sm">
+                                <span>Année: 2023 • </span>
+                                <span class="text-[#1086b9]">198</span>
+                                <span> téléchargements</span>
+                            </p>
+                        </div>
+                        <button class="flex-shrink-0 border-[1.6px] border-[#0088ff] p-3 hover:bg-[rgba(0,136,255,0.1)] transition-colors">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 2.5V12.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13 9.5L10 12.5L7 9.5" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 15V16.5C2.5 17.0523 2.94772 17.5 3.5 17.5H16.5C17.0523 17.5 17.5 17.0523 17.5 16.5V15" stroke="#00C0E8" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alumnis-content" class="tab-content hidden">
+                <h2 class="text-[#1086b9] text-2xl md:text-3xl font-semibold mb-12">Alumnis</h2>
+
+                <!-- Alumni List -->
+                <div class="space-y-6 md:space-y-8">
+                    <!-- Alumni 1 - Rayan Elwood -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Rayan Elwood</h3>
+                            <p class="text-[#4a5565] text-sm">Cybersecurity specialist protecting networks and data.</p>
+                        </div>
+                        <a href="alumni-detail.html" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Alumni 2 - Maya Bennington -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Maya Bennington</h3>
+                            <p class="text-[#4a5565] text-sm">Data analyst turning raw data into insights.</p>
+                        </div>
+                        <a href="#" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Alumni 3 - Karim Solace -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Karim Solace</h3>
+                            <p class="text-[#4a5565] text-sm">DevOps engineer automating deployment pipelines.</p>
+                        </div>
+                        <a href="#" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Alumni 4 - Elena Marthis -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Elena Marthis</h3>
+                            <p class="text-[#4a5565] text-sm">Cloud developer building scalable web apps.</p>
+                        </div>
+                        <a href="#" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Alumni 5 - Jonas Ridwell -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Jonas Ridwell</h3>
+                            <p class="text-[#4a5565] text-sm">IT consultant optimizing systems for efficiency.</p>
+                        </div>
+                        <a href="#" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Alumni 6 - Sofia Ardent -->
+                    <div class="bg-[#fafbfd] border border-[rgba(16,134,185,0.4)] rounded-[5px] p-6 md:p-8 flex items-center justify-between">
+                        <div>
+                            <h3 class="text-neutral-950 text-base font-normal mb-3">Sofia Ardent</h3>
+                            <p class="text-[#4a5565] text-sm">Penetration tester finding security vulnerabilities.</p>
+                        </div>
+                        <a href="#" class="flex-shrink-0 bg-[#6ecefa] text-white text-xl md:text-[28px] font-medium px-6 py-3 rounded-[5px] hover:bg-[#5ab8e8] transition-colors flex items-center gap-2">
+                            view
+                            <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 8L17 16L9 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="metiers-content" class="tab-content hidden">
+                <!-- Career Sectors Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 lg:gap-x-20 lg:gap-y-16 max-w-[1210px] mx-auto">
+                    <!-- CyberSecurity -->
+                    <div class="bg-[rgba(189,221,235,0.35)] border border-[rgba(16,134,185,0.4)] rounded-[5px] h-[140px] p-4 relative">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[63px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">CyberSecurity</p>
+                    </div>
+
+                    <!-- Data Engineer -->
+                    <div class="bg-[rgba(189,221,235,0.35)] border border-[rgba(16,134,185,0.4)] rounded-[5px] h-[140px] p-4 relative">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[63px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">Data Engineer</p>
+                    </div>
+
+                    <!-- DEVOPS -->
+                    <div class="bg-[rgba(189,221,235,0.35)] border border-[rgba(16,134,185,0.4)] rounded-[5px] h-[140px] p-4 relative">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[91px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">DEVOPS</p>
+                    </div>
+
+                    <!-- Dev Mobile -->
+                    <div class="bg-[rgba(189,221,235,0.42)] border border-[rgba(16,134,185,0.4)] rounded-[5px] h-[140px] p-4 relative">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[67px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">Dev Mobile</p>
+                    </div>
+
+                    <!-- Data Analyst -->
+                    <a href="career-detail.html" class="bg-[rgba(189,221,235,0.3)] border border-[rgba(31,140,187,0.4)] rounded-[5px] h-[140px] p-4 relative block hover:border-[#1086b9] transition-colors cursor-pointer">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[63px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">Data Analyst</p>
+                    </a>
+
+                    <!-- IT -->
+                    <div class="bg-[rgba(189,221,235,0.35)] border border-[rgba(16,134,185,0.4)] rounded-[5px] h-[140px] p-4 relative">
+                        <div class="absolute left-[19px] top-[7px] w-12 h-12">
+                            <img src="./images/career-icon.png" alt="Career icon" class="w-full h-full">
+                        </div>
+                        <p class="absolute left-[155px] top-[69px] font-['Arial',sans-serif] text-[32px] text-neutral-950 leading-6">IT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#fafbfd] border-t border-gray-200 py-8 md:py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12">
+                <!-- Brand Info -->
+                <div class="flex-1">
+                    <h3 class="text-black text-xl md:text-2xl font-medium mb-2">EspritPathFinder</h3>
+                    <p class="text-black text-sm md:text-base font-medium">
+                        Empowering students to make confident decisions.
+                    </p>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-black text-base font-medium mb-3">Contact Us</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-[#1086b9] text-sm">+216 29911661</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#1086b9" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-[#1086b9] text-sm">EspritPF@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-6"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-black text-xs md:text-sm font-medium">
+                    © 2025 EspritPathFinder - ESPRIT University. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(tabName, button) {
+            // Hide all tab content
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+            
+            // Reset all buttons to inactive state
+            const buttons = button.parentElement.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-[rgba(110,206,250,0.35)]');
+                btn.classList.add('bg-[rgba(16,134,185,0.02)]');
+            });
+            
+            // Show selected content
+            document.getElementById(tabName + '-content').classList.remove('hidden');
+            
+            // Set clicked button to active state
+            button.classList.remove('bg-[rgba(16,134,185,0.02)]');
+            button.classList.add('bg-[rgba(110,206,250,0.35)]');
+        }
+    </script>
+</body>
+</html>
+
+
