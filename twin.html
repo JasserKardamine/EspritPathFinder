@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWIN - Technologie du web et de internet - EspritPathFinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-white font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-background border-b-[0.5px] border-transparent shadow-card h-16 sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto h-full flex items-center justify-between px-4 md:px-8">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="EspritPathFinder Logo" class="h-10 md:h-14 w-auto">
+            </div>
+            
+            <!-- Navigation Links - Hidden on mobile -->
+            <div class="flex items-center gap-3 md:gap-4 lg:gap-6">
+                <a href="index.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Home</a>
+                <a href="options.html" class="text-lg xl:text-2xl font-medium text-primary">Options</a>
+                <a href="careers.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Careers</a>
+                <a href="monitors.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Monitors</a>
+            </div>
+            
+            <!-- Login Button -->
+            <div>
+                <a href="signin.html" class="bg-secondary text-white text-sm md:text-lg xl:text-2xl font-medium px-4 md:px-8 py-2 md:py-2.5 rounded-card inline-block hover:bg-secondary transition-colors">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Title -->
+        <section class="py-8 md:py-12">
+            <div class="max-w-[1440px] mx-auto px-4">
+                <h1 class="text-2xl md:text-3xl lg:text-[40px] font-bold text-primary text-center">
+                    Technologie du web et de internet
+                </h1>
+            </div>
+        </section>
+
+        <!-- Tab Navigation -->
+        <section class="pb-8 md:pb-12">
+            <div class="max-w-[1234px] mx-auto px-4">
+                <div class="border border-primary/40 rounded-card overflow-hidden">
+                    <div class="flex flex-wrap">
+                        <!-- Tab 1: Intro (Active) -->
+                        <a href="#intro" class="flex-1 min-w-[150px] h-[53px] flex items-center justify-center bg-[rgba(110,206,250,0.35)] border-r border-primary/40 text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.5)] transition-colors" id="tab-intro">
+                            Intro
+                        </a>
+                        
+                        <!-- Tab 2: Ressources -->
+                        <a href="#ressources" class="flex-1 min-w-[150px] h-[53px] flex items-center justify-center bg-[rgba(16,134,185,0.02)] border-r border-primary/40 text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.2)] transition-colors" id="tab-ressources">
+                            Ressources
+                        </a>
+                        
+                        <!-- Tab 3: Podcast/Video -->
+                        <a href="#podcast" class="flex-1 min-w-[150px] h-[53px] flex items-center justify-center bg-[rgba(16,134,185,0.02)] border-r border-primary/40 text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.2)] transition-colors" id="tab-podcast">
+                            Podcast/Video
+                        </a>
+                        
+                        <!-- Tab 4: Temoignage -->
+                        <a href="#temoignage" class="flex-1 min-w-[150px] h-[53px] flex items-center justify-center bg-[rgba(16,134,185,0.02)] border-r border-primary/40 text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.2)] transition-colors" id="tab-temoignage">
+                            Temoignage
+                        </a>
+                        
+                        <!-- Tab 5: Aide -->
+                        <a href="#aide" class="flex-1 min-w-[100px] h-[53px] flex items-center justify-center bg-[rgba(16,134,185,0.02)] border-r border-primary/40 text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.2)] transition-colors" id="tab-aide">
+                            Aide
+                        </a>
+                        
+                        <!-- Tab 6: Live session -->
+                        <a href="#live" class="flex-1 min-w-[150px] h-[53px] flex items-center justify-center bg-[rgba(16,134,185,0.02)] text-black text-lg md:text-xl font-normal hover:bg-[rgba(110,206,250,0.2)] transition-colors" id="tab-live">
+                            Live session
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="pb-12 md:pb-16">
+            <div class="max-w-[1234px] mx-auto px-4">
+                <!-- Intro Tab Content -->
+                <div id="intro" class="tab-content">
+                    <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- Left Column: Text Content -->
+                            <div>
+                                <h2 class="text-2xl md:text-[28px] font-bold text-primary mb-6 leading-[42px]">
+                                    Everything You Need to Know
+                                </h2>
+                                
+                                <div class="space-y-4 opacity-70">
+                                    <p class="text-sm md:text-base text-black leading-[30px]">
+                                        The TWIN (Technologies Web et Images Numériques) option orients the training of future engineers toward careers in web and internet technologies.
+                                    </p>
+                                    <p class="text-sm md:text-base text-black leading-[30px]">
+                                        Its objective is to strengthen student competencies in various application areas, such as web development languages, frameworks, user experience (UX), search engine optimization (SEO), as well as data analysis techniques including Web Analytics, Data Mining, and Big Data.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column: Image -->
+                            <div class="flex items-center justify-center">
+                                <img src="./images/twin-students.png" alt="TWIN Students" class="w-full max-w-[482px] h-auto rounded-card">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ressources Tab Content (Hidden by default) -->
+                <div id="ressources" class="tab-content hidden">
+                    <div class="py-8">
+                        <h2 class="text-2xl md:text-[30px] font-semibold text-primary text-center mb-12">
+                            Everything you want to know
+                        </h2>
+                        
+                        <!-- Resource Cards Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto">
+                            <!-- Card 1: Myths Vs Reality -->
+                            <div class="bg-[rgba(189,193,255,0.1)] border border-[rgba(29,201,201,0.4)] rounded-card p-6">
+                                <h3 class="text-xl md:text-2xl font-medium text-primary mb-6">
+                                    Myths Vs Reality
+                                </h3>
+                                
+                                <ul class="space-y-4 mb-6">
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Analyse détaillée</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Études de cas</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Document de comparison</span>
+                                    </li>
+                                </ul>
+                                
+                                <a href="#" class="flex items-center justify-center gap-2 w-full h-11 border-2 border-secondary rounded-card text-secondary text-base font-semibold hover:bg-secondary hover:text-white transition-colors">
+                                    Découvrir
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <!-- Card 2: Taux de reussite -->
+                            <div class="bg-[rgba(189,193,255,0.1)] border border-[rgba(29,201,201,0.4)] rounded-card p-6">
+                                <h3 class="text-xl md:text-2xl font-medium text-primary mb-6">
+                                    Taux de reussite
+                                </h3>
+                                
+                                <ul class="space-y-4 mb-6">
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Exercices pratiques</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Corrections détaillées</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Quiz d'évaluation</span>
+                                    </li>
+                                </ul>
+                                
+                                <a href="#" class="flex items-center justify-center gap-2 w-full h-11 border-2 border-secondary rounded-card text-secondary text-base font-semibold hover:bg-secondary hover:text-white transition-colors">
+                                    Découvrir
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            
+                            <!-- Card 3: Analyse de risque -->
+                            <div class="bg-[rgba(189,193,255,0.1)] border border-[rgba(29,201,201,0.4)] rounded-card p-6">
+                                <h3 class="text-xl md:text-2xl font-medium text-primary mb-6">
+                                    Analyse de risque
+                                </h3>
+                                
+                                <ul class="space-y-4 mb-6">
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Analyse détaillée</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Études de cas</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <svg class="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="#1086b9"/>
+                                        </svg>
+                                        <span class="text-sm text-slate-800">Document de comparison</span>
+                                    </li>
+                                </ul>
+                                
+                                <a href="#" class="flex items-center justify-center gap-2 w-full h-11 border-2 border-secondary rounded-card text-secondary text-base font-semibold hover:bg-secondary hover:text-white transition-colors">
+                                    Découvrir
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 7l5 5m0 0l-5 5m5-5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast/Video Tab Content (Hidden by default) -->
+                <div id="podcast" class="tab-content hidden">
+                    <div class="space-y-8 max-w-[1200px] mx-auto">
+                        <!-- Item 1: Interview Full-Stack Developer -->
+                        <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[345px] h-[194px] flex items-center justify-center rounded flex-shrink-0">
+                                <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" fill="#1086b9" opacity="0.1"/>
+                                    <path d="M18 14v20l16-10-16-10z" fill="#1086b9"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-medium text-black">
+                                    Interview: Développeur Full-Stack
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 2: Podcast The Good, The Bad, and The Code -->
+                        <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[345px] h-[194px] flex items-center justify-center rounded flex-shrink-0">
+                                <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="18" y="8" width="12" height="18" rx="6" fill="#1086b9"/>
+                                    <path d="M14 20v2a10 10 0 0020 0v-2M24 32v8M16 40h16" stroke="#1086b9" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-medium text-black">
+                                    Podcast: The Good, The Bad, and The Code
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 3: Podcast A Day in the Life -->
+                        <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[345px] h-[194px] flex items-center justify-center rounded flex-shrink-0">
+                                <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="18" y="8" width="12" height="18" rx="6" fill="#1086b9"/>
+                                    <path d="M14 20v2a10 10 0 0020 0v-2M24 32v8M16 40h16" stroke="#1086b9" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-medium text-black">
+                                    Podcast: A Day in the Life of a TWIN Student
+                                </h3>
+                            </div>
+                        </div>
+
+                        <!-- Item 4: Interview Frontend Developer -->
+                        <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                            <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[345px] h-[194px] flex items-center justify-center rounded flex-shrink-0">
+                                <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" r="24" fill="#1086b9" opacity="0.1"/>
+                                    <path d="M18 14v20l16-10-16-10z" fill="#1086b9"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl md:text-2xl font-medium text-black">
+                                    Interview: Développeur Frontend
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temoignage Tab Content (Hidden by default) -->
+<div id="temoignage" class="tab-content hidden">
+                    <div class="max-w-[1200px] mx-auto">
+                        <h2 class="text-2xl md:text-[28px] font-bold text-primary mb-8">
+                            What Students Say
+                        </h2>
+                        
+                        <!-- Testimonials Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Testimonial 1 -->
+                            <div class="bg-background border border-primary/40 rounded-card p-6">
+                                <div class="flex gap-4">
+                                    <div class="bg-primary rounded-card w-12 h-12 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-lg font-medium text-primary mb-2">
+                                            Témoignage 1
+                                        </h3>
+                                        <p class="text-sm text-black opacity-80 leading-relaxed mb-2">
+                                            Le plus important c'est de bien maîttriser les bases en programmation. TWIN m'a permis de développer des applications complètes.
+                                        </p>
+                                        <p class="text-xs font-medium text-black opacity-60">
+                                            © Sarah, Promo 2024
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="bg-background border border-primary/40 rounded-card p-6">
+                                <div class="flex gap-4">
+                                    <div class="bg-primary rounded-card w-12 h-12 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-lg font-medium text-primary mb-2">
+                                            Témoignage 2
+                                        </h3>
+                                        <p class="text-sm text-black opacity-80 leading-relaxed mb-2">
+                                            J'ai adoré la partie développement web. Les projets sont très pratiques et préparent bien au monde professionnel.
+                                        </p>
+                                        <p class="text-xs font-medium text-black opacity-60">
+                                            © Mehdi, Promo 2023
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="bg-background border border-primary/40 rounded-card p-6">
+                                <div class="flex gap-4">
+                                    <div class="bg-primary rounded-card w-12 h-12 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-lg font-medium text-primary mb-2">
+                                            Témoignage 3
+                                        </h3>
+                                        <p class="text-sm text-black opacity-80 leading-relaxed mb-2">
+                                            Une option parfaite pour ceux qui veulent créer des sites et applications modernes. La charge de travail est conséquente mais passionnante.
+                                        </p>
+                                        <p class="text-xs font-medium text-black opacity-60">
+                                            © Leila, Promo 2024
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="bg-background border border-primary/40 rounded-card p-6">
+                                <div class="flex gap-4">
+                                    <div class="bg-primary rounded-card w-12 h-12 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h3 class="text-lg font-medium text-primary mb-2">
+                                            Témoignage 4
+                                        </h3>
+                                        <p class="text-sm text-black opacity-80 leading-relaxed mb-2">
+                                            Une option parfaite pour ceux qui veulent créer des sites et applications modernes. La charge de travail est conséquente mais passionnante.
+                                        </p>
+                                        <p class="text-xs font-medium text-black opacity-60">
+                                            é Leila, Promo 2024
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aide Tab Content (Hidden by default) -->
+                <div id="aide" class="tab-content hidden">
+                    <div class="max-w-[1200px] mx-auto space-y-16">
+                        
+                        <!-- Section 1: Orientation Quiz -->
+                        <div class="bg-[rgba(189,193,255,0.1)] rounded-card py-12 text-center">
+                            <h2 class="text-2xl md:text-[30px] font-semibold text-primary mb-4">
+                                Orientation Quiz
+                            </h2>
+                            <p class="text-xl md:text-2xl text-black mb-8 max-w-[513px] mx-auto">
+                                Discover if this option matches your profile
+                            </p>
+                            <a href="quiz1.html" class="inline-flex items-center gap-3 bg-secondary text-white px-8 py-3 rounded-card text-2xl md:text-[28px] font-medium hover:bg-secondary transition-colors">
+                                Take The Quiz Now
+                                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Section 2: Compare Options Objectively -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h2 class="text-2xl md:text-[30px] font-semibold text-primary mb-6">
+                                    Compare Options Objectively
+                                </h2>
+                                <p class="text-xl md:text-2xl text-black mb-8 leading-relaxed">
+                                    ESPRIT Options Comparison<br>
+                                    Objectively compare GL, SLEAM, SAE and TWIN to make the right choice
+                                </p>
+                                <a href="compare.html" class="inline-flex items-center gap-3 bg-secondary text-white px-8 py-3 rounded-card text-2xl md:text-[28px] font-medium hover:bg-secondary transition-colors">
+                                    Compare options
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="flex justify-center">
+                                <img src="./images/aide1.png" alt="compare options" class="w-full max-w-[400px] h-auto">
+                            </div>
+                        </div>
+
+                        <!-- Section 3: Ask Questions to Experts -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="flex justify-center order-2 lg:order-1">
+                                <img src="./images/aide2.png" alt="ask questions" class="w-full max-w-[400px] h-auto">
+                            </div>
+                            <div class="order-1 lg:order-2">
+                                <h2 class="text-2xl md:text-[30px] font-semibold text-primary mb-6">
+                                    Ask Questions to Experts
+                                </h2>
+                                <p class="text-xl md:text-2xl text-black mb-8 leading-relaxed">
+                                    ESPRIT Options Comparison<br>
+                                    Objectively compare GL, SLEAM, SAE and TWIN to make the right choice
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-3 bg-secondary text-white px-8 py-3 rounded-card text-2xl md:text-[28px] font-medium hover:bg-secondary transition-colors">
+                                    Ask questions
+                                    <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Live Session Tab Content (Hidden by default) -->
+                <div id="live" class="tab-content hidden">
+                    <div class="max-w-[1200px] mx-auto">
+                        <h2 class="text-2xl md:text-[35px] font-semibold text-primary mb-8">
+                            Last live sessions
+                        </h2>
+                        
+                        <!-- Sessions List -->
+                        <div class="space-y-8">
+                            <!-- Session 1 -->
+                            <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                                <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[348px] h-[201px] rounded-card flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#1086b9"/><path d="M18 14l16 10-16 10V14z" fill="white"/></svg>
+                                </div>
+                                <div class="flex-1 text-center md:text-left">
+                                    <h3 class="text-xl md:text-2xl text-black mb-3">
+                                        Introduction to options
+                                    </h3>
+                                    <p class="text-xl md:text-2xl text-black">
+                                        25/12/2025 - 14:00
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Session 2 -->
+                            <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                                <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[348px] h-[201px] rounded-card flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="24" cy="24" r="24" fill="#1086b9"/>
+                                        <path d="M18 14l14 10-14 10V14z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1 text-center md:text-left">
+                                    <h3 class="text-xl md:text-2xl text-black mb-3">
+                                        Introduction to options
+                                    </h3>
+                                    <p class="text-xl md:text-2xl text-black">
+                                        25/12/2025 - 14:00
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Session 3 -->
+                            <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                                <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[348px] h-[201px] rounded-card flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="24" cy="24" r="24" fill="#1086b9"/>
+                                        <path d="M18 14l14 10-14 10V14z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1 text-center md:text-left">
+                                    <h3 class="text-xl md:text-2xl text-black mb-3">
+                                        Introduction to options
+                                    </h3>
+                                    <p class="text-xl md:text-2xl text-black">
+                                        25/12/2025 - 14:00
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Session 4 -->
+                            <div class="bg-[rgba(189,193,255,0.1)] rounded-card p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center">
+                                <div class="bg-[rgba(217,217,217,0.4)] w-full md:w-[348px] h-[201px] rounded-card flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="24" cy="24" r="24" fill="#1086b9"/>
+                                        <path d="M18 14l14 10-14 10V14z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-1 text-center md:text-left">
+                                    <h3 class="text-xl md:text-2xl text-black mb-3">
+                                        Introduction to options
+                                    </h3>
+                                    <p class="text-xl md:text-2xl text-black">
+                                        25/12/2025 - 14:00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Join Live Sessions Button -->
+                        <div class="mt-12">
+                            <a href="book.html" class="block w-full bg-secondary text-white text-2xl md:text-[28px] font-medium py-4 rounded-card text-center hover:bg-secondary transition-colors">
+                                Join a Live sessions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-gray-200 py-8 md:py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12">
+                <!-- Brand Info -->
+                <div class="flex-1">
+                    <h3 class="text-black text-xl md:text-2xl font-medium mb-2">EspritPathFinder</h3>
+                    <p class="text-black text-sm md:text-base font-medium">
+                        Empowering students to make confident decisions.
+                    </p>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-black text-base font-medium mb-3">Contact Us</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-primary text-sm">+216 29911661</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="5" width="18" height="14" rx="2" stroke="#1086b9" stroke-width="2"/>
+                                <path d="M3 7l9 6 9-6" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-primary text-sm">EspritPF@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-6"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-black text-xs md:text-sm font-medium">
+                    © 2025 EspritPathFinder - ESPRIT University. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('a[id^="tab-"]');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            // Get hash from URL or default to intro
+            const hash = window.location.hash || '#intro';
+            showTab(hash.substring(1));
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    showTab(targetId);
+                    window.location.hash = targetId;
+                });
+            });
+            
+            function showTab(tabId) {
+                // Hide all content
+                contents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                
+                // Remove active state from all tabs
+                tabs.forEach(tab => {
+                    tab.classList.remove('bg-[rgba(110,206,250,0.35)]');
+                    tab.classList.add('bg-[rgba(16,134,185,0.02)]');
+                });
+                
+                // Show selected content
+                const selectedContent = document.getElementById(tabId);
+                if (selectedContent) {
+                    selectedContent.classList.remove('hidden');
+                }
+                
+                // Add active state to selected tab
+                const selectedTab = document.getElementById('tab-' + tabId);
+                if (selectedTab) {
+                    selectedTab.classList.remove('bg-[rgba(16,134,185,0.02)]');
+                    selectedTab.classList.add('bg-[rgba(110,206,250,0.35)]');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+

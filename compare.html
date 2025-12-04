@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Options - EspritPathFinder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-background font-poppins">
+    <!-- Navbar -->
+    <nav class="bg-background border-b-[0.5px] border-transparent shadow-card h-16 sticky top-0 z-50">
+        <div class="max-w-[1440px] mx-auto h-full flex items-center justify-between px-4 md:px-8">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="./images/logo.png" alt="EspritPathFinder Logo" class="h-10 md:h-14 w-auto">
+            </div>
+            
+            <!-- Navigation Links - Hidden on mobile -->
+            <div class="flex items-center gap-3 md:gap-4 lg:gap-6">
+                <a href="index.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Home</a>
+                <a href="options.html" class="text-lg xl:text-2xl font-medium text-primary">Options</a>
+                <a href="careers.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Careers</a>
+                <a href="monitors.html" class="text-lg xl:text-2xl font-medium text-black hover:text-primary transition-colors">Monitors</a>
+            </div>
+            
+            <!-- Login Button -->
+            <div>
+                <a href="signin.html" class="bg-secondary text-white text-sm md:text-lg xl:text-2xl font-medium px-4 md:px-8 py-2 md:py-2.5 rounded-card inline-block hover:bg-secondary transition-colors">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1440px] mx-auto px-4 py-8 md:py-12 lg:py-16">
+        <!-- Back Button -->
+        <div class="mb-8">
+            <a href="options.html" class="inline-block">
+                <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 12H5M12 19l-7-7 7-7" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Header -->
+        <div class="text-center mb-12 md:mb-16 max-w-[1087px] mx-auto">
+            <h1 class="text-3xl md:text-4xl lg:text-[40px] font-bold text-primary mb-4 md:mb-6">
+                Compare Options
+            </h1>
+            <p class="text-base md:text-lg lg:text-xl font-medium text-black opacity-70 max-w-[672px] mx-auto">
+                Select 2 options to compare their workload, career paths, and success rates
+            </p>
+        </div>
+
+        <!-- Selection Status -->
+        <div class="max-w-[1087px] mx-auto mb-8">
+            <div class="bg-white border-[0.8px] border-primary/40 rounded-card p-6">
+                <div class="mb-2">
+                    <span class="text-base font-medium text-black">Selected: </span>
+                    <span class="text-base font-medium text-primary" id="selectionCount">0/2</span>
+                </div>
+                <p class="text-sm text-black opacity-70">
+                    Please select at least 2 options to compare
+                </p>
+            </div>
+        </div>
+
+        <!-- Options Grid -->
+        <div class="max-w-[1087px] mx-auto">
+            <!-- Row 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <!-- TWIN -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="TWIN">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">TWIN</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Technologies du Web et de l'INternet
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- DS -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="DS">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">DS</h3>
+                            <p class="text-sm text-black opacity-70">Data Science</p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- BI -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="BI">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">BI</h3>
+                            <p class="text-sm text-black opacity-70">Business Intelligence</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <!-- SLEAM -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="SLEAM">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">SLEAM</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Systèmes Logiciels Embarqués et Autonomes Mobiles
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- SIM -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="SIM">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">SIM</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Sécurité Informatique et Mobilité
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- SAE -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="SAE">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">SAE</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Systèmes et Applications Entreprise
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <!-- ArcTIC -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="ArcTIC">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">ArcTIC</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Architecture IT & Cloud Computing
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- INFINI -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="INFINI">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">IFI</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Informatique Financière et Ingénierie
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- GAMIX -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="GAMIX">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">GAMIX</h3>
+                            <p class="text-sm text-black opacity-70">
+                                Game development & Immersive eXperience
+                            </p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- DATA -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="DATA">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">DATA</h3>
+                            <p class="text-sm text-black opacity-70 leading-relaxed">
+                                Data Analytics for Telecommunications Applications
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- NIDS -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="NIDS">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">NIDS</h3>
+                            <p class="text-sm text-black opacity-70">
+                                Network Infrastructure & Data Security
+                            </p>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- SE -->
+                <label class="bg-white border-[1.6px] border-primary/40 rounded-card p-6 cursor-pointer hover:border-primary transition-colors">
+                    <div class="flex items-start gap-4">
+                        <input type="checkbox" class="option-checkbox w-5 h-5 mt-1 border-[0.8px] border-primary/40 rounded shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] cursor-pointer accent-[#1086b9]" data-option="SE">
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-primary mb-1">SE</h3>
+                            <p class="text-sm text-black opacity-70">Software Engineering</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Compare Button -->
+            <div class="text-center">
+                <button id="compareBtn" class="bg-primary text-white text-lg md:text-xl font-medium px-12 py-3 rounded-card hover:bg-primary transition-colors opacity-50 cursor-not-allowed" disabled>
+                    Compare Selected Options
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t-2 border-gray-200 py-8 md:py-12 mt-16">
+        <div class="max-w-[1440px] mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mb-6">
+                <!-- Brand Info -->
+                <div class="flex-1">
+                    <h3 class="text-black text-xl md:text-2xl font-medium mb-2">EspritPathFinder</h3>
+                    <p class="text-black text-sm md:text-base font-medium">
+                        Empowering students to make confident decisions.
+                    </p>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-black text-base font-medium mb-3">Contact Us</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-primary text-sm font-medium">+216 29911661</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#1086b9" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#1086b9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <span class="text-primary text-sm font-medium">EspritPF@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Divider -->
+            <div class="border-t border-gray-300 my-6"></div>
+            
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="text-black text-xs md:text-sm font-medium">
+                    © 2025 EspritPathFinder - ESPRIT University. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Selection logic
+        const checkboxes = document.querySelectorAll('.option-checkbox');
+        const selectionCount = document.getElementById('selectionCount');
+        const compareBtn = document.getElementById('compareBtn');
+        let selectedOptions = [];
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    if (selectedOptions.length < 2) {
+                        selectedOptions.push(this.dataset.option);
+                    } else {
+                        this.checked = false;
+                        return;
+                    }
+                } else {
+                    selectedOptions = selectedOptions.filter(opt => opt !== this.dataset.option);
+                }
+                
+                updateUI();
+            });
+        });
+
+        function updateUI() {
+            selectionCount.textContent = `${selectedOptions.length}/2`;
+            
+            if (selectedOptions.length === 2) {
+                compareBtn.disabled = false;
+                compareBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                compareBtn.classList.add('cursor-pointer');
+            } else {
+                compareBtn.disabled = true;
+                compareBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                compareBtn.classList.remove('cursor-pointer');
+            }
+        }
+
+        compareBtn.addEventListener('click', function() {
+            if (selectedOptions.length === 2) {
+                // Navigate to comparison results page
+                window.location.href = 'comparison-result.html';
+            }
+        });
+    </script>
+</body>
+</html>
+
