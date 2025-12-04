@@ -10,6 +10,7 @@ Plateforme d'orientation académique pour aider les étudiants à prendre des d�
 | [Mehdi ayachi] | [**Pages**: Options.html,twin.html(Aide,ressources,live session),book.html] |
 | [Adem Ben Ahmed] | [**Pges**:careers.html,career-detail.html,alumni-detail.html] |
 | [Ayoub Chouat] | [**Pges**:Sondage.html,Reponse.html] |
+| [Jasse Kardamine] | [**Pges**:Monitors.html,Questions.html, Question-details.html] |
 
 ##  Instructions d'Exécution
 
