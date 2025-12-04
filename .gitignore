@@ -1,1 +1,5 @@
-node_modules
+# Node modules
+node_modules/
+
+# Tailwind output (compiled CSS)
+src/output.css
