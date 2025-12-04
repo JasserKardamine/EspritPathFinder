@@ -1,4 +1,4 @@
-name: Deploy Tailwind Static Site to GitHub Pages
+name: Deploy Tailwind Static Site
 
 on:
   push:
@@ -10,33 +10,19 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Tailwind CSS
-        run: npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
-
-      - name: Copy static files
-        run: cp index.html ./dist/
+      - run: npm install
+      - run: npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
+      - run: cp index.html ./dist/
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v4
