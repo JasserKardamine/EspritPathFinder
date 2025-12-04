@@ -21,13 +21,13 @@ jobs:
           node-version: 20
 
       - run: npm install
-      - run: npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
-      - run: cp index.html ./dist/
+      - run: npx tailwindcss -i ./src/input.css -o ./src/output.css --minify
+      - run: cp index.html ./src/
 
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist
+          path: ./src
 
       - name: Deploy to GitHub Pages
         id: deployment
