@@ -36,12 +36,12 @@ jobs:
         run: npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify
 
       - name: Copy static files
-        run: cp index.html ./dist/  # copy your HTML files to dist
+        run: cp index.html ./dist/
 
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist  # only upload the build folder
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
