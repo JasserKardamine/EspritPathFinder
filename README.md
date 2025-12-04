@@ -43,10 +43,6 @@ Pour le développement avec rechargement automatique du CSS :
 npm run watch
 ```
 
-### Déploiement
-
-Le projet est déployé sur GitHub Pages :
- [https://jasserkardamine.github.io/EspritPathFinder/](https://jasserkardamine.github.io/EspritPathFinder/)
 
 ##  Structure du Projet
 
