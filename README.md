@@ -7,7 +7,7 @@ Plateforme d'orientation académique pour aider les étudiants à prendre des d�
 | Membre | Responsabilité |
 |--------|---------------|
 | [Trabelsi Sabri] | **Pages**: compare.html, comparison-result.html, quiz1-5.html, results.html, twin.html(intro/podcast/temoi)
-| [Nom Membre 2] | [À compléter] |
+| [Mehdi ayachi] | [**Pages**: Options.html,twin.html(Aide,ressources,live session),book.html] |
 | [Nom Membre 3] | [À compléter] |
 | [Nom Membre 4] | [À compléter] |
 
